@@ -1,0 +1,52 @@
+table Fact_subproject_wave_timeline
+	lineageTag: fee2317e-6e64-4a8e-a0b6-ed19a5752756
+	sourceLineageTag: e6d2698e-6bf2-4912-95e1-c8bb7753436d
+
+	column subprojectwave_id
+		dataType: int64
+		lineageTag: 4929365c-d677-4c05-8c59-08724e1c9e58
+		sourceLineageTag: ff8ab0fb-e75a-46b0-a3d0-2d5f8d9e0faa
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: subprojectwave_id
+
+		annotation SummarizationSetBy = User
+
+	column registry_id
+		dataType: int64
+		lineageTag: 88eebf1c-cbfe-428f-be55-08e885a6fbed
+		sourceLineageTag: 8ba90f7e-bd24-40f1-b91e-cf6403bed001
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: registry_id
+
+		annotation SummarizationSetBy = User
+
+	column 'First visit date'
+		dataType: dateTime
+		formatString: General Number
+		lineageTag: 51d76ba0-9daa-49b1-a105-32ed9b2c4df5
+		sourceLineageTag: cf316975-9410-4d8d-a6f5-f4ddb4002b63
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: First visit date
+
+		annotation SummarizationSetBy = User
+
+	column 'Last visit date'
+		dataType: dateTime
+		formatString: General Number
+		lineageTag: 3ed5689f-be1f-444c-afc2-f8e1b16003bd
+		sourceLineageTag: bfda6aea-23de-4490-9d5f-93ef2a25f26a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Last visit date
+
+		annotation SummarizationSetBy = User
+
+	partition Fact_subproject_wave_timeline = entity
+		mode: directQuery
+		source
+			entityName: Fact_subproject_wave_timeline
+			expressionSource: 'DirectQuery à AS – Golden_field_dataset'
+

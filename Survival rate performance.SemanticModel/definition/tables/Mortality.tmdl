@@ -1,0 +1,247 @@
+table Mortality
+	lineageTag: 2f576d26-091f-4b19-9740-33321da87eea
+
+	column parcel_farmer_name
+		dataType: string
+		lineageTag: 82b76319-9a4c-4186-8f21-7c0e6161c63b
+		summarizeBy: none
+		sourceColumn: parcel_farmer_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column parcel_farmer_code
+		dataType: string
+		lineageTag: 7260ea09-659a-4885-bb29-91f3b6017b51
+		summarizeBy: none
+		sourceColumn: parcel_farmer_code
+
+		annotation SummarizationSetBy = Automatic
+
+	column parcel_nb
+		dataType: int64
+		formatString: 0
+		lineageTag: 1eead0dc-5581-4c5b-8863-b074c709bcc3
+		summarizeBy: sum
+		sourceColumn: parcel_nb
+
+		annotation SummarizationSetBy = Automatic
+
+	column '**Vérifiez sur quelle parcelle vous vous trouvez. N''enregistrez aucun point**'
+		dataType: string
+		lineageTag: d8ade679-fdf9-4e2b-a730-82d5e8eee07e
+		summarizeBy: none
+		sourceColumn: **Vérifiez sur quelle parcelle vous vous trouvez. N'enregistrez aucun point**
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Sélectionner la parcelle où vous êtes'
+		dataType: string
+		lineageTag: 25f4ddff-ac2d-461b-840f-310edef3f14a
+		summarizeBy: none
+		sourceColumn: Sélectionner la parcelle où vous êtes
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Voulez-vous monitorer une parcelle qui a déjà été préregistrée ?'
+		dataType: string
+		lineageTag: 7fe3e6e3-53ee-4441-a09b-6ac23390f49e
+		summarizeBy: none
+		sourceColumn: Voulez-vous monitorer une parcelle qui a déjà été préregistrée ?
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Prenez un point GPS de la parcelle (vous devez être à l''intérieur de la parcelle).'
+		dataType: string
+		lineageTag: 72b92961-b397-48f1-8b4c-bf59258143b8
+		summarizeBy: none
+		sourceColumn: Prenez un point GPS de la parcelle (vous devez être à l'intérieur de la parcelle).
+
+		annotation SummarizationSetBy = Automatic
+
+	column '_Prenez un point GPS de la parcelle (vous devez être à l''intérieur de la parcelle)._latitude'
+		dataType: double
+		lineageTag: 364e464a-0a60-4795-9d12-d2d37cf21a54
+		summarizeBy: sum
+		sourceColumn: _Prenez un point GPS de la parcelle (vous devez être à l'intérieur de la parcelle)._latitude
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column '_Prenez un point GPS de la parcelle (vous devez être à l''intérieur de la parcelle)._longitude'
+		dataType: double
+		lineageTag: e0d16dcf-a410-48bf-96a1-6bbfb5e11768
+		summarizeBy: sum
+		sourceColumn: _Prenez un point GPS de la parcelle (vous devez être à l'intérieur de la parcelle)._longitude
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column '_Prenez un point GPS de la parcelle (vous devez être à l''intérieur de la parcelle)._altitude'
+		dataType: double
+		lineageTag: 584ec9c2-2504-4b1e-b1d7-d9bfd65006c6
+		summarizeBy: sum
+		sourceColumn: _Prenez un point GPS de la parcelle (vous devez être à l'intérieur de la parcelle)._altitude
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column '_Prenez un point GPS de la parcelle (vous devez être à l''intérieur de la parcelle)._precision'
+		dataType: double
+		lineageTag: 9f362e64-3614-4f2d-83e3-927eb6052531
+		summarizeBy: sum
+		sourceColumn: _Prenez un point GPS de la parcelle (vous devez être à l'intérieur de la parcelle)._precision
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column parcel_prereg_yn_count
+		dataType: int64
+		formatString: 0
+		lineageTag: e81bbb1a-e672-4062-80fd-da286a8387b5
+		summarizeBy: sum
+		sourceColumn: parcel_prereg_yn_count
+
+		annotation SummarizationSetBy = Automatic
+
+	column parcel_nb_other
+		dataType: int64
+		formatString: 0
+		lineageTag: 01f3b579-d63e-4042-b301-7371fe613b37
+		summarizeBy: sum
+		sourceColumn: parcel_nb_other
+
+		annotation SummarizationSetBy = Automatic
+
+	column parcel_code_other_parcel
+		dataType: string
+		lineageTag: 6bb19e01-aa03-4aed-850d-514245a2ba12
+		summarizeBy: none
+		sourceColumn: parcel_code_other_parcel
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Code parcelle'
+		dataType: string
+		lineageTag: 791c5f32-64fe-4865-8bf4-01fbe76180aa
+		summarizeBy: none
+		sourceColumn: Code parcelle
+
+		annotation SummarizationSetBy = Automatic
+
+	column planting_model_pull
+		dataType: string
+		lineageTag: 2e1bbca9-f5f4-4d46-aa97-4eb483e12fef
+		summarizeBy: none
+		sourceColumn: planting_model_pull
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Causes de mortalité significatives au monitoring 2'
+		dataType: string
+		lineageTag: f18f1e71-e3e0-4207-a8f4-65c78130dfeb
+		summarizeBy: none
+		sourceColumn: Causes de mortalité significatives au monitoring 2
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Précisions sur les causes de mortalité (autre)'
+		dataType: string
+		lineageTag: df78e327-8c29-4a9a-8143-267ad6f07854
+		summarizeBy: none
+		sourceColumn: Précisions sur les causes de mortalité (autre)
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_living_trees_monitoring2_out
+		dataType: int64
+		formatString: 0
+		lineageTag: fd937633-27f3-4136-ac54-f9371c8dc1f8
+		summarizeBy: sum
+		sourceColumn: total_living_trees_monitoring2_out
+
+		annotation SummarizationSetBy = Automatic
+
+	column _index
+		dataType: int64
+		formatString: 0
+		lineageTag: ba1b0bfa-785d-40e1-b24f-b7a85722850b
+		summarizeBy: sum
+		sourceColumn: _index
+
+		annotation SummarizationSetBy = Automatic
+
+	column _parent_table_name
+		dataType: string
+		lineageTag: e9dc0342-11c4-4816-baa2-eede84dc038d
+		summarizeBy: none
+		sourceColumn: _parent_table_name
+
+		annotation SummarizationSetBy = Automatic
+
+	column _parent_index
+		dataType: int64
+		formatString: 0
+		lineageTag: 65269db3-584d-4ff2-bc34-160e41c2b763
+		summarizeBy: sum
+		sourceColumn: _parent_index
+
+		annotation SummarizationSetBy = Automatic
+
+	column _submission__id
+		dataType: int64
+		formatString: 0
+		lineageTag: 62631da0-e318-4628-97b8-4fea0c994d9f
+		summarizeBy: sum
+		sourceColumn: _submission__id
+
+		annotation SummarizationSetBy = Automatic
+
+	column Cooperative
+		dataType: string
+		lineageTag: 0d45abe2-6b62-4adf-8e56-e54031f2f61d
+		summarizeBy: none
+		sourceColumn: Cooperative
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Location level 1'
+		dataType: string
+		lineageTag: 765023f5-b63c-4b1d-8bcb-f26dcd5a4f54
+		summarizeBy: none
+		sourceColumn: Location level 1
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Location level 2'
+		dataType: string
+		lineageTag: 3b629e14-383f-41ae-901a-ace6c8fbfd8e
+		summarizeBy: none
+		sourceColumn: Location level 2
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Location level 3'
+		dataType: string
+		lineageTag: e34c9414-ef5c-4898-8322-76564b0b2645
+		summarizeBy: none
+		sourceColumn: Location level 3
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Mortality = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("C:\Users\DELL\Downloads\FINAL_Monitoring2_Côte_dIvoire_w22_-_all_versions_-_Français_fr_-_2025-02-18-12-16-44.xlsx"), null, true),
+				    Mortality_Sheet = Source{[Item="Mortality",Kind="Sheet"]}[Data],
+				    #"En-têtes promus" = Table.PromoteHeaders(Mortality_Sheet, [PromoteAllScalars=true]),
+				    #"Type modifié" = Table.TransformColumnTypes(#"En-têtes promus",{{"parcel_farmer_name", type text}, {"parcel_farmer_code", type text}, {"parcel_nb", Int64.Type}, {"**Vérifiez sur quelle parcelle vous vous trouvez. #(lf)N'enregistrez aucun point**", type text}, {"Sélectionner la parcelle où vous êtes", type any}, {"Voulez-vous monitorer une parcelle qui a déjà été préregistrée ?", type text}, {"Prenez un point GPS de la parcelle (vous devez être à l'intérieur de la parcelle).", type text}, {"_Prenez un point GPS de la parcelle (vous devez être à l'intérieur de la parcelle)._latitude", type number}, {"_Prenez un point GPS de la parcelle (vous devez être à l'intérieur de la parcelle)._longitude", type number}, {"_Prenez un point GPS de la parcelle (vous devez être à l'intérieur de la parcelle)._altitude", type number}, {"_Prenez un point GPS de la parcelle (vous devez être à l'intérieur de la parcelle)._precision", type number}, {"parcel_prereg_yn_count", Int64.Type}, {"parcel_nb_other", Int64.Type}, {"parcel_code_other_parcel", type text}, {"Code parcelle", type text}, {"planting_model_pull", type text}, {"Causes de mortalité significatives au monitoring 2", type text}, {"Précisions sur les causes de mortalité (autre)", type text}, {"total_living_trees_monitoring2_out", Int64.Type}, {"_index", Int64.Type}, {"_parent_table_name", type text}, {"_parent_index", Int64.Type}, {"_submission__id", Int64.Type}, {"Cooperative", type text}, {"Location level 1", type text}, {"Location level 2", type text}, {"Location level 3", type text}})
+				in
+				    #"Type modifié"
+
+	annotation PBI_ResultType = Table
+

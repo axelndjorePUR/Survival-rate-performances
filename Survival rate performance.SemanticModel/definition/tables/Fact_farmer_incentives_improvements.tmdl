@@ -1,0 +1,70 @@
+table Fact_farmer_incentives_improvements
+	lineageTag: f69313b8-5376-4724-af71-b86416d602bc
+	sourceLineageTag: 15bafe1c-ad11-48ee-8089-6645e4683b33
+
+	column subprojectwave_id
+		dataType: double
+		lineageTag: 5f7ac158-9d56-4948-81d1-12d832fc27a2
+		sourceLineageTag: bc11bda0-8d02-48bc-bbe8-24489487a3fe
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: subprojectwave_id
+
+		annotation SummarizationSetBy = User
+
+	column registry_id
+		dataType: double
+		lineageTag: 02ab9e6e-b87b-40d3-bbb7-df8998d33587
+		sourceLineageTag: 27598959-6b80-4965-80ee-90f5a3266cea
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: registry_id
+
+		annotation SummarizationSetBy = User
+
+	column id_farmer
+		dataType: double
+		lineageTag: 2d93225c-e905-469e-b10b-237d63c5edd4
+		sourceLineageTag: dcf382bb-889e-490e-9619-8fe48b8fc74e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_farmer
+
+		annotation SummarizationSetBy = User
+
+	column incentive_improvement_type
+		dataType: string
+		lineageTag: 2225542c-76ac-4bcb-bb4d-7f0d5343a146
+		sourceLineageTag: 2d31c403-5943-456a-839c-53db758bf188
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: incentive_improvement_type
+
+		annotation SummarizationSetBy = User
+
+	column subprojectwave_registry_id
+		dataType: string
+		lineageTag: bbd11660-5f36-4311-8161-4eec2f18769b
+		sourceLineageTag: db123f71-be11-48b2-ae16-4a18af7a2c5c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: subprojectwave_registry_id
+
+		annotation SummarizationSetBy = User
+
+	column farmerwave_id
+		dataType: double
+		lineageTag: 9e13968c-f206-4945-9055-fd76ee9e53c8
+		sourceLineageTag: b2a9d084-ea9e-4bd6-9e3e-1f1ef6ba201c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: farmerwave_id
+
+		annotation SummarizationSetBy = User
+
+	partition Fact_farmer_incentives_improvements = entity
+		mode: directQuery
+		source
+			entityName: Fact_farmer_incentives_improvements
+			expressionSource: 'DirectQuery à AS – Golden_field_dataset'
+

@@ -1,0 +1,30 @@
+table Fact_parcel_not_relevant_reasons
+	lineageTag: 82842452-0c3b-4b36-83c5-a3de6dede564
+	sourceLineageTag: 8dc0e8ab-8555-4114-ba0c-f8533a9d2368
+
+	column parcel_id
+		dataType: int64
+		lineageTag: 3c9e436a-2186-4f54-a4fe-b295f8751b93
+		sourceLineageTag: 22208b88-9097-4b11-9700-52bc22b566ab
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: parcel_id
+
+		annotation SummarizationSetBy = User
+
+	column parcel_not_relevant_reason
+		dataType: string
+		lineageTag: 5c9777a8-5467-40ae-a45e-b9f9b54a8920
+		sourceLineageTag: 29c20b58-6e73-40d5-a79e-82497b289eff
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: parcel_not_relevant_reason
+
+		annotation SummarizationSetBy = User
+
+	partition Fact_parcel_not_relevant_reasons = entity
+		mode: directQuery
+		source
+			entityName: Fact_parcel_not_relevant_reasons
+			expressionSource: 'DirectQuery à AS – Golden_field_dataset'
+

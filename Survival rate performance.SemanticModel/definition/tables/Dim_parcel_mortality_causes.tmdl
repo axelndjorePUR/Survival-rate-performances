@@ -1,0 +1,31 @@
+table Dim_parcel_mortality_causes
+	lineageTag: 4c6a15dd-3e8b-4b04-8662-33a1254bf3cc
+	sourceLineageTag: a8a8af35-5738-45c9-a99c-f245cc1fe6bb
+
+	column parcel_mortality_cause_id
+		dataType: int64
+		isNullable: false
+		lineageTag: 1b3bb8a3-18ef-46dd-87aa-51e3ab7e99b7
+		sourceLineageTag: 11e89833-1037-4218-9de4-e6cd7859962e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: parcel_mortality_cause_id
+
+		annotation SummarizationSetBy = User
+
+	column parcel_mortality_cause
+		dataType: string
+		lineageTag: d3c47ca0-1c6e-4456-9097-969c0118f943
+		sourceLineageTag: e0c27e8c-4940-4c2b-b35f-cef1b69802f3
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: parcel_mortality_cause
+
+		annotation SummarizationSetBy = User
+
+	partition Dim_parcel_mortality_causes = entity
+		mode: directQuery
+		source
+			entityName: Dim_parcel_mortality_causes
+			expressionSource: 'DirectQuery à AS – Golden_field_dataset'
+

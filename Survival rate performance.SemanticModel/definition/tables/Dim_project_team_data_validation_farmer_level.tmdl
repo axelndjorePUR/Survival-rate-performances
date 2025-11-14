@@ -1,0 +1,32 @@
+table Dim_project_team_data_validation_farmer_level
+	lineageTag: 27f88327-d7ef-4039-83f9-cad8d3212c05
+	sourceLineageTag: 5f6c6993-17ba-429c-9b08-89f775a9478c
+
+	column farmerwave_id
+		dataType: double
+		isNullable: false
+		lineageTag: f8748c4d-5664-4ec7-9f4c-c4a40a9f7e7d
+		sourceLineageTag: 65ab5b98-d209-4af8-95bd-897e6f948d07
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: farmerwave_id
+
+		annotation SummarizationSetBy = User
+
+	column farmerwave_isvalidated
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 7c2f3e93-b2fe-4c8e-b481-9609874dff3f
+		sourceLineageTag: 6efe3b6f-26e6-4849-af25-935fe734cc74
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: farmerwave_isvalidated
+
+		annotation SummarizationSetBy = User
+
+	partition Dim_project_team_data_validation_farmer_level = entity
+		mode: directQuery
+		source
+			entityName: Dim_project_team_data_validation_farmer_level
+			expressionSource: 'DirectQuery à AS – Golden_field_dataset'
+

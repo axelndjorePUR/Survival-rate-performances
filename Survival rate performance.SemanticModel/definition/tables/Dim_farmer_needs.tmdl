@@ -1,0 +1,31 @@
+table Dim_farmer_needs
+	lineageTag: df581c47-e492-41d2-98da-6c508d680304
+	sourceLineageTag: 8f547d2f-c0a0-40c8-a93e-610dde190a75
+
+	column farmer_need_id
+		dataType: double
+		isNullable: false
+		lineageTag: 8e4f2e85-b00a-42a8-8336-21438a58f349
+		sourceLineageTag: d49a3a75-851e-4f55-94a5-dda71edda78b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: farmer_need_id
+
+		annotation SummarizationSetBy = User
+
+	column farmer_need_type
+		dataType: string
+		lineageTag: e7498f31-e32d-4853-9e95-8c624d843b6a
+		sourceLineageTag: d0e2d54b-8df6-44e2-bba2-9c9ba5e6b2ea
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: farmer_need_type
+
+		annotation SummarizationSetBy = User
+
+	partition Dim_farmer_needs = entity
+		mode: directQuery
+		source
+			entityName: Dim_farmer_needs
+			expressionSource: 'DirectQuery à AS – Golden_field_dataset'
+

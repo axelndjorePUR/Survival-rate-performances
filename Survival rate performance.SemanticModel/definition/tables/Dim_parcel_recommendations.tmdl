@@ -1,0 +1,31 @@
+table Dim_parcel_recommendations
+	lineageTag: 330bc8f5-4d50-475b-9862-b1f0c437c71e
+	sourceLineageTag: 66179083-e59f-49f3-a01c-5d00b66c2c92
+
+	column parcel_recommendation_id
+		dataType: int64
+		isNullable: false
+		lineageTag: 2c810d41-0c17-4759-88e6-ec3081a7cc29
+		sourceLineageTag: f74a0f22-41db-47b2-af0e-7f0abfdd90fd
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: parcel_recommendation_id
+
+		annotation SummarizationSetBy = User
+
+	column parcel_recommendation
+		dataType: string
+		lineageTag: 52abb8e5-7c2e-4bed-b3f2-1e2410871215
+		sourceLineageTag: 2b6e2cd0-3919-410b-8452-0a97652e5582
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: parcel_recommendation
+
+		annotation SummarizationSetBy = User
+
+	partition Dim_parcel_recommendations = entity
+		mode: directQuery
+		source
+			entityName: Dim_parcel_recommendations
+			expressionSource: 'DirectQuery à AS – Golden_field_dataset'
+

@@ -1,0 +1,171 @@
+table Asso_countries_project_waves
+	lineageTag: 2f48c9f2-e69c-453e-9a74-8475547cb39e
+	sourceLineageTag: 2fb64582-6c74-49b1-ae94-5684017934b8
+
+	measure 'trees distributed per ha' =
+			
+			ROUND(DIVIDE(
+				[distributed trees],
+				SUM('Dim_parcels'[parcel_area_ha])
+			),0)
+		lineageTag: baac1c78-7aa6-4d34-a812-595b6b2cccef
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Corrélation de m1 survival rate et trees distributed per ha pour country' =
+			
+			VAR __CORRELATION_TABLE = VALUES('Dim_subprojectwaves'[country])
+			VAR __COUNT =
+				COUNTX(
+					KEEPFILTERS(__CORRELATION_TABLE),
+					CALCULATE([m1 static survival rate] * [trees distributed per ha])
+				)
+			VAR __SUM_X = SUMX(KEEPFILTERS(__CORRELATION_TABLE), CALCULATE([m1 static survival rate]))
+			VAR __SUM_Y =
+				SUMX(
+					KEEPFILTERS(__CORRELATION_TABLE),
+					CALCULATE([trees distributed per ha])
+				)
+			VAR __SUM_XY =
+				SUMX(
+					KEEPFILTERS(__CORRELATION_TABLE),
+					CALCULATE([m1 static survival rate] * [trees distributed per ha] * 1.)
+				)
+			VAR __SUM_X2 =
+				SUMX(
+					KEEPFILTERS(__CORRELATION_TABLE),
+					CALCULATE([m1 static survival rate] ^ 2)
+				)
+			VAR __SUM_Y2 =
+				SUMX(
+					KEEPFILTERS(__CORRELATION_TABLE),
+					CALCULATE([trees distributed per ha] ^ 2)
+				)
+			RETURN
+				DIVIDE(
+					__COUNT * __SUM_XY - __SUM_X * __SUM_Y * 1.,
+					SQRT(
+						(__COUNT * __SUM_X2 - __SUM_X ^ 2)
+							* (__COUNT * __SUM_Y2 - __SUM_Y ^ 2)
+					)
+				)
+		lineageTag: a139edef-cfb4-4ed6-80b4-577f3edf2a67
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Input-Receiving Producers Groups' =
+			
+			SWITCH(true(),[input-receiving producers] <= 100, "0-100",[input-receiving producers] > 101 && [input-receiving producers] <= 150, "101-150", [input-receiving producers] > 151 && [input-receiving producers] <= 300, "151-200", "<200")
+		lineageTag: a1d392d0-64df-41a4-8cfd-ddb9e5a5f6c0
+
+	measure 'Cumulative Total tree prereg' = ```
+			
+			CALCULATE(
+			    SUM(Fact_trees_perfomances[nb_trees]),
+			    FILTER(
+			        ALL(Fact_trees_perfomances[kobosubmission_sent_date]),
+			        Fact_trees_perfomances[kobosubmission_sent_date] <= MAX(Fact_trees_perfomances[kobosubmission_sent_date])
+			    )
+			)
+			
+			```
+		formatString: 0
+		lineageTag: e45512e0-f5b4-4df0-ad43-61536d147f2b
+
+		changedProperty = Name
+
+	measure 'Cumulative Total tree Monitoring1' =
+			
+			CALCULATE(
+			    SUM(Fact_trees_perfomances[nb_trees]),
+			    FILTER(
+			        ALL(Fact_trees_perfomances[kobosubmission_sent_date]),
+			        Fact_trees_perfomances[kobosubmission_sent_date] <= MAX(Fact_trees_perfomances[kobosubmission_sent_date])
+			    )
+			)
+		formatString: 0
+		lineageTag: 845fbff9-dab4-4397-a483-8e33dc29eb7d
+
+		changedProperty = Name
+
+	measure 'Cumulative Total trees delivered' =
+			
+			CALCULATE(
+			    SUM(Fact_trees_perfomances[nb_trees]),
+			    FILTER(
+			        ALL(Fact_trees_perfomances[kobosubmission_sent_date]),
+			        Fact_trees_perfomances[kobosubmission_sent_date] <= MAX(Fact_trees_perfomances[kobosubmission_sent_date])
+			    )
+			)
+		formatString: 0
+		lineageTag: a449904c-6c4c-4dd5-806f-9b93b05ca037
+
+		changedProperty = Name
+
+	measure 'Cumulative Total producers delivered' =
+			
+			CALCULATE(
+			    SUM(Dim_farmers[farmer_code]),
+			    FILTER(
+			        ALL(Fact_trees_perfomances[kobosubmission_sent_date]),
+			        Fact_trees_perfomances[kobosubmission_sent_date] <= MAX(Fact_trees_perfomances[kobosubmission_sent_date])
+			    )
+			)
+		formatString: 0
+		lineageTag: 0731ddb1-b5df-4748-9d5b-0e990bc6c883
+
+		changedProperty = Name
+
+	measure 'Cumulative Total tree Monitoring2' =
+			
+			CALCULATE(
+			    SUM(Fact_trees_perfomances[nb_trees]),
+			    FILTER(
+			        ALL(Fact_trees_perfomances[kobosubmission_sent_date]),
+			        Fact_trees_perfomances[kobosubmission_sent_date] <= MAX(Fact_trees_perfomances[kobosubmission_sent_date])
+			    )
+			)
+		formatString: 0
+		lineageTag: e0e1576c-b4d8-47b5-a478-417f580f7490
+
+		changedProperty = Name
+
+	measure TotalSalesByThreeColumns =
+			
+			CALCULATE(
+			    [producers delivered],
+			    TREATAS(VALUES(Dim_farmers[location_level_2]),Dim_subprojectwaves[wave]),
+			    TREATAS(VALUES(Dim_subprojectwaves[wave]),Dim_farmers[location_level_2])
+			)
+		formatString: 0
+		lineageTag: 36316c64-7d72-494c-8787-88ca684e556d
+
+		changedProperty = Name
+
+	column country
+		dataType: string
+		lineageTag: 3e1d3184-7b03-4a07-b81d-9b68681bc093
+		sourceLineageTag: 832a809e-dee5-49c6-9587-d1c744a14f24
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: country
+
+		annotation SummarizationSetBy = User
+
+	column project_wave
+		dataType: string
+		isNullable: false
+		lineageTag: 47dca69c-0032-4d81-9e0e-b6331d63601c
+		sourceLineageTag: fea41061-981c-42bc-9d15-032384503ffd
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: project_wave
+
+		annotation SummarizationSetBy = User
+
+	partition Asso_countries_project_waves = entity
+		mode: directQuery
+		source
+			entityName: Asso_countries_project_waves
+			expressionSource: 'DirectQuery à AS – Golden_field_dataset'
+

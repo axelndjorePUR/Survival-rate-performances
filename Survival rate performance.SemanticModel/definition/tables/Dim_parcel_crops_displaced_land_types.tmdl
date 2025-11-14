@@ -1,0 +1,31 @@
+table Dim_parcel_crops_displaced_land_types
+	lineageTag: 7ecbe4ff-abf2-4311-8826-ea002cebea90
+	sourceLineageTag: dd3acccf-4f5b-4c34-b7c0-a71d265290bb
+
+	column parcel_crops_displaced_land_type_id
+		dataType: double
+		isNullable: false
+		lineageTag: 8a24230e-b05c-4d4e-ae69-40a46305e25e
+		sourceLineageTag: fe2429f2-8d07-4089-87a0-f27ebf41be0c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: parcel_crops_displaced_land_type_id
+
+		annotation SummarizationSetBy = User
+
+	column parcel_crops_displaced_land_type
+		dataType: string
+		lineageTag: 2127dfce-1bba-46a1-b49f-aa02e8244bc0
+		sourceLineageTag: 48bc1a6b-f7c7-4b18-969b-e50d907c2f1c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: parcel_crops_displaced_land_type
+
+		annotation SummarizationSetBy = User
+
+	partition Dim_parcel_crops_displaced_land_types = entity
+		mode: directQuery
+		source
+			entityName: Dim_parcel_crops_displaced_land_types
+			expressionSource: 'DirectQuery à AS – Golden_field_dataset'
+

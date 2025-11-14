@@ -1,0 +1,344 @@
+table Dim_calendar
+	lineageTag: 9ccc55e5-97a0-4650-8f10-5623cfecefcb
+	sourceLineageTag: ae7dcb80-a2ce-4bdd-85ff-349300d10d67
+
+	column Date
+		dataType: dateTime
+		isNullable: false
+		formatString: General Number
+		lineageTag: b5d47a92-3457-4f90-a436-94896e079e7f
+		sourceLineageTag: ad22baa6-bf5c-498d-aaf5-4a730ebcb4ee
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Date
+
+		annotation SummarizationSetBy = User
+
+	column Year
+		dataType: int64
+		formatString: 0
+		lineageTag: 951f2111-c0e8-4328-8f4d-b36b6199774a
+		sourceLineageTag: 082a3f8c-485e-435f-8851-953e6710aa51
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Year
+
+		annotation SummarizationSetBy = User
+
+	column 'Start of Year'
+		dataType: dateTime
+		formatString: General Number
+		lineageTag: f46fad9f-364b-4063-bc74-9a672b686deb
+		sourceLineageTag: db1625a5-6c72-428f-a750-074e6fb26ae5
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Start of Year
+
+		annotation SummarizationSetBy = User
+
+	column 'End of Year'
+		dataType: dateTime
+		formatString: General Number
+		lineageTag: 3f8b7c61-c9bd-4f2c-9712-ae6d65459f91
+		sourceLineageTag: 15d057f9-7f05-4788-bfc5-cefcc87eda28
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: End of Year
+
+		annotation SummarizationSetBy = User
+
+	column Month
+		dataType: int64
+		formatString: 0
+		lineageTag: bc8ffb03-7368-45b4-8ea7-b84f5cc076a8
+		sourceLineageTag: b11e63cd-c27c-4079-999a-45cbf2d3e35a
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Month
+
+		annotation SummarizationSetBy = User
+
+	column 'Start of Month'
+		dataType: dateTime
+		formatString: General Number
+		lineageTag: b5345e10-18c6-448b-b4e0-cefd81ed71ba
+		sourceLineageTag: 905e1262-2a82-4de3-a9a8-12dca01bb85b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Start of Month
+
+		annotation SummarizationSetBy = User
+
+	column 'End of Month'
+		dataType: dateTime
+		formatString: General Number
+		lineageTag: 21b1839d-4097-4f52-954c-176ee1b15216
+		sourceLineageTag: 5cbe406f-8cf2-4479-b63d-941112f2c38e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: End of Month
+
+		annotation SummarizationSetBy = User
+
+	column 'Days in Month'
+		dataType: int64
+		formatString: 0
+		lineageTag: 512996d0-15a5-4292-8f4b-5ab0bb8559ad
+		sourceLineageTag: 470097a8-0d17-4375-8003-f588f7fe9f9f
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Days in Month
+
+		annotation SummarizationSetBy = User
+
+	column 'Year Month Number'
+		dataType: int64
+		formatString: 0
+		lineageTag: 7ad2bd5f-9794-4f31-885e-ee65bbbe3879
+		sourceLineageTag: 47940fa5-6b21-4391-92f4-cfbc27f302f7
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Year Month Number
+
+		annotation SummarizationSetBy = User
+
+	column 'Year Month Name'
+		dataType: string
+		lineageTag: 1ddaead3-399f-4b38-997a-da7328e16a72
+		sourceLineageTag: aee6d221-4c0a-4b80-a9f5-34fa0167ce0d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Year Month Name
+
+		annotation SummarizationSetBy = User
+
+	column Day
+		dataType: int64
+		formatString: 0
+		lineageTag: 46fbcc85-3337-4d76-b5b3-0f71799966f4
+		sourceLineageTag: 5a10e792-425f-4152-80f3-cdffc9916e10
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Day
+
+		annotation SummarizationSetBy = User
+
+	column 'Day Name'
+		dataType: string
+		lineageTag: 3208ef34-ea4c-469e-bfbe-e2531416a910
+		sourceLineageTag: b40fcb7d-ae02-41dd-a66b-914d4d65d3b4
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Day Name
+
+		annotation SummarizationSetBy = User
+
+	column 'Day Name Short'
+		dataType: string
+		lineageTag: d054a186-fbab-4f21-bf52-d786d7a1f10c
+		sourceLineageTag: d5ca302a-9cc0-46a4-b93e-19608b8c4db1
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Day Name Short
+
+		annotation SummarizationSetBy = User
+
+	column 'Day of Week'
+		dataType: int64
+		formatString: 0
+		lineageTag: 80864b60-5189-48b8-a85c-19b3e3661d01
+		sourceLineageTag: 838b3ef6-f1b8-4d56-815b-3f870f41fa9c
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Day of Week
+
+		annotation SummarizationSetBy = User
+
+	column 'Day of Year'
+		dataType: int64
+		formatString: 0
+		lineageTag: e6c26663-fb58-444f-80ae-e836311eede0
+		sourceLineageTag: f1ca1efb-7936-4f89-b710-de4a83923ea1
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Day of Year
+
+		annotation SummarizationSetBy = User
+
+	column 'Month Name'
+		dataType: string
+		lineageTag: 3862b319-7511-4ab0-94a5-6d828e070b41
+		sourceLineageTag: 2dc2b697-a7f9-42b4-960f-dc1207329751
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Month Name
+
+		annotation SummarizationSetBy = User
+
+	column 'Month Name Short'
+		dataType: string
+		lineageTag: de6b809a-ebc2-4d27-93f7-0f340bdfd214
+		sourceLineageTag: 95d23aab-3fbd-48cb-b11f-e5093a4b94c5
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Month Name Short
+
+		annotation SummarizationSetBy = User
+
+	column Quarter
+		dataType: int64
+		formatString: 0
+		lineageTag: fd5e5101-9eb2-4810-835e-08d3deff87a7
+		sourceLineageTag: c2267f3d-2bb9-452c-b0c2-0670bd6f88be
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Quarter
+
+		annotation SummarizationSetBy = User
+
+	column 'Quarter Name'
+		dataType: string
+		lineageTag: 499ed319-083a-4d88-a1aa-f43edb17c024
+		sourceLineageTag: ac4a4f9c-f914-49b8-a0b2-f035cfa5deb2
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Quarter Name
+
+		annotation SummarizationSetBy = User
+
+	column 'Year Quarter Number'
+		dataType: int64
+		formatString: 0
+		lineageTag: aaf6c42b-3683-444d-9237-b76823163100
+		sourceLineageTag: 5272dc65-f578-479a-98dd-cd918eddd013
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Year Quarter Number
+
+		annotation SummarizationSetBy = User
+
+	column 'Year Quarter Name'
+		dataType: string
+		lineageTag: 94fba3ed-15e3-4fa8-9f69-972787a2aee9
+		sourceLineageTag: 6f02ebc0-1284-44ff-b25c-01d1b6bdc386
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Year Quarter Name
+
+		annotation SummarizationSetBy = User
+
+	column 'Start of Quarter'
+		dataType: dateTime
+		formatString: General Number
+		lineageTag: ba3d8fbd-4ce5-476e-a169-f7ef2419f433
+		sourceLineageTag: c59aa227-a189-4e9f-8326-879e002c522d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Start of Quarter
+
+		annotation SummarizationSetBy = User
+
+	column 'End of Quarter'
+		dataType: dateTime
+		formatString: General Number
+		lineageTag: 29cc7ac2-2a8f-45e5-957d-f7ff3971d0af
+		sourceLineageTag: 5e4935f2-ec79-4be1-84d1-a4a2f7809f45
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: End of Quarter
+
+		annotation SummarizationSetBy = User
+
+	column 'Week of Year'
+		dataType: int64
+		formatString: 0
+		lineageTag: fbfa18eb-1a10-4a4b-a853-37d8a7e77cc6
+		sourceLineageTag: 6e74e6ef-7e44-4f97-b4e9-d28c68336bef
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Week of Year
+
+		annotation SummarizationSetBy = User
+
+	column 'Start of Week'
+		dataType: dateTime
+		formatString: General Number
+		lineageTag: 29d5b5f8-d80d-4db1-bacc-d5985667b1f2
+		sourceLineageTag: 77bc8117-1299-4d92-af3b-7472338b6b19
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Start of Week
+
+		annotation SummarizationSetBy = User
+
+	column 'End of Week'
+		dataType: dateTime
+		formatString: General Number
+		lineageTag: cbce0a0c-8d93-49bf-81fd-1322dfc6a6ea
+		sourceLineageTag: c31560fe-6f49-4c6e-be6c-3928ddb1ca4b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: End of Week
+
+		annotation SummarizationSetBy = User
+
+	column 'Day Offset'
+		dataType: int64
+		formatString: 0
+		lineageTag: 39cbe04e-3a71-426c-b458-0aa399385794
+		sourceLineageTag: 1c1070b9-b770-4b7c-bd54-2c9e1ddd7123
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Day Offset
+
+		annotation SummarizationSetBy = User
+
+	column 'Month Offset'
+		dataType: int64
+		formatString: 0
+		lineageTag: f5f1e206-27e7-43f3-97dc-e1f0b43704a0
+		sourceLineageTag: aa8f613b-84c9-4f21-a0ae-50b1b96b9c3e
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Month Offset
+
+		annotation SummarizationSetBy = User
+
+	column 'Quarter Offset'
+		dataType: int64
+		formatString: 0
+		lineageTag: 8e74fbc2-d734-4790-ab7b-b8e3c8d0e2e2
+		sourceLineageTag: 73af0aad-acf1-418f-b93c-8c1ac5603252
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Quarter Offset
+
+		annotation SummarizationSetBy = User
+
+	column 'Year Offset'
+		dataType: int64
+		formatString: 0
+		lineageTag: beb240a9-6dcc-4c49-a1cf-d01b1a869897
+		sourceLineageTag: 57bbc6a6-552e-4773-b507-07a09a9bb7fc
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: Year Offset
+
+		annotation SummarizationSetBy = User
+
+	column 'Year Week name'
+		dataType: string
+		lineageTag: 21a8b6d0-ba3a-4c70-9d96-95ac0d16a51b
+		sourceLineageTag: cb697a36-4e6b-469a-aba6-9e1e6ed3404e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Year Week name
+
+		annotation SummarizationSetBy = User
+
+	partition Dim_calendar = entity
+		mode: directQuery
+		source
+			entityName: Dim_calendar
+			expressionSource: 'DirectQuery à AS – Golden_field_dataset'
+

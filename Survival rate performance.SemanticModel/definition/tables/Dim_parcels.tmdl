@@ -1,0 +1,395 @@
+table Dim_parcels
+	lineageTag: b3f04fc2-e648-4460-ade8-76e41f8e1691
+	sourceLineageTag: 75239205-c000-4cce-a99d-6b736d8f36db
+
+	column parcel_id
+		dataType: int64
+		isNullable: false
+		lineageTag: bfcc63f9-a966-4a5a-9906-adfb601f29b1
+		sourceLineageTag: 80f875bd-965c-4d95-9beb-c737d87aad16
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: parcel_id
+
+		annotation SummarizationSetBy = User
+
+	column last_loading_time
+		dataType: dateTime
+		formatString: General Number
+		lineageTag: dbc385f9-b6da-43ea-ba95-b9b4df4b6575
+		sourceLineageTag: 5a313458-f77c-4c82-8529-997ec9eceafe
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: last_loading_time
+
+		annotation SummarizationSetBy = User
+
+	column parcel_is_relevant_for_planting
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: d080c34c-a69d-47b3-813f-5623fb376667
+		sourceLineageTag: c6e8925c-ae21-445c-992d-f198b8405d31
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: parcel_is_relevant_for_planting
+
+		annotation SummarizationSetBy = User
+
+	column parcel_area_ha
+		dataType: double
+		lineageTag: 635694c3-1369-4b75-a7d6-a64a6f32a116
+		sourceLineageTag: 13cea08d-8836-4504-a687-67280af04ecb
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: parcel_area_ha
+
+		annotation SummarizationSetBy = User
+
+	column parcel_area_to_plant
+		dataType: double
+		lineageTag: a7f318eb-c89f-4579-937d-7941e6817fa9
+		sourceLineageTag: 302195b0-5d1b-4129-b89c-0d11abb6ef3f
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: parcel_area_to_plant
+
+		annotation SummarizationSetBy = User
+
+	column parcel_final_area
+		dataType: double
+		lineageTag: 85659a20-39ed-4816-943d-6f67c4e47dfe
+		sourceLineageTag: d51dfc8e-2d75-4f12-9f53-a482c49ff10b
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: parcel_final_area
+
+		annotation SummarizationSetBy = User
+
+	column parcel_length_m
+		dataType: double
+		lineageTag: 6da16692-f64e-4a26-9f10-eeb42f37f5b6
+		sourceLineageTag: 0f313b14-2a19-4efb-b30e-c23f093ab0c3
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: parcel_length_m
+
+		annotation SummarizationSetBy = User
+
+	column parcel_length_to_plant_m
+		dataType: double
+		lineageTag: 28dc1f88-005a-4392-97e0-6cbfcb6ded0f
+		sourceLineageTag: b07e464e-91e5-4b75-8764-717a23b9f081
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: parcel_length_to_plant_m
+
+		annotation SummarizationSetBy = User
+
+	column parcel_average_tree_height_at_m1
+		dataType: double
+		lineageTag: c438ce4c-7e81-4cf0-b7d4-08675f5c0d4e
+		sourceLineageTag: c8928ddd-77f2-410a-8dfc-80a004bcd40d
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: parcel_average_tree_height_at_m1
+
+		annotation SummarizationSetBy = User
+
+	column parcel_average_tree_height_at_m2
+		dataType: double
+		lineageTag: df77b125-5e82-4ec7-9c02-93ed4bd7411f
+		sourceLineageTag: fa31de58-96b0-430f-ae8c-c813330c83c3
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: parcel_average_tree_height_at_m2
+
+		annotation SummarizationSetBy = User
+
+	column parcel_is_planting_model_respected
+		dataType: string
+		lineageTag: ec96666e-aff0-4848-b967-5bf3e3a13660
+		sourceLineageTag: fe433e1b-6206-4c44-bbc2-14734007ec83
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: parcel_is_planting_model_respected
+
+		annotation SummarizationSetBy = User
+
+	column parcel_explain_planting_model_diff
+		dataType: string
+		lineageTag: 8221bd1c-288a-4132-ab90-3584e3ec1356
+		sourceLineageTag: 6c0fb841-106a-48ac-8590-64abbb2472a2
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: parcel_explain_planting_model_diff
+
+		annotation SummarizationSetBy = User
+
+	column parcel_has_history_land_use_changed
+		dataType: string
+		lineageTag: 80670995-79c1-4534-8db8-4d38e197cf85
+		sourceLineageTag: e150f3d5-0afb-42d2-b13a-699db671bcab
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: parcel_has_history_land_use_changed
+
+		annotation SummarizationSetBy = User
+
+	column parcel_average_tree_height_at_m1_cluster
+		dataType: string
+		lineageTag: 7da6e87b-f289-43ae-8bff-29ce4569064d
+		sourceLineageTag: 805b9788-b4a6-4533-989f-4f39085f61b0
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: parcel_average_tree_height_at_m1_cluster
+
+		annotation SummarizationSetBy = User
+
+	column parcel_average_tree_height_at_m2_cluster
+		dataType: string
+		lineageTag: 6a297606-639b-4f62-a79c-9f4d462de106
+		sourceLineageTag: f225cfcc-1242-4374-ba2b-cafcaa5ecfe5
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: parcel_average_tree_height_at_m2_cluster
+
+		annotation SummarizationSetBy = User
+
+	column parcel_plague_disease_level_m1
+		dataType: string
+		lineageTag: 9aeb5566-03db-4ae4-a61c-9a978b522b7c
+		sourceLineageTag: 786ecb94-6505-4c5d-911d-d6962dd1b716
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: parcel_plague_disease_level_m1
+
+		annotation SummarizationSetBy = User
+
+	column parcel_plague_disease_level_m2
+		dataType: string
+		lineageTag: b7bafd75-9d9e-465b-a583-c5b84d102a86
+		sourceLineageTag: fb55f3b5-acdd-40b9-9d65-b5f9b93dcf9b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: parcel_plague_disease_level_m2
+
+		annotation SummarizationSetBy = User
+
+	column parcel_weed_competition_m1
+		dataType: string
+		lineageTag: 17104e8c-5444-4a30-a14b-80463b3d78ad
+		sourceLineageTag: 400a0b03-2c48-4826-8e61-de78130e7c03
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: parcel_weed_competition_m1
+
+		annotation SummarizationSetBy = User
+
+	column parcel_weed_competition_m2
+		dataType: string
+		lineageTag: c5e1e731-2204-4cca-9f86-88c410c0780d
+		sourceLineageTag: 4f1cf073-d123-488e-ac65-0afbd0c5ad3a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: parcel_weed_competition_m2
+
+		annotation SummarizationSetBy = User
+
+	column parcel_pruning_m1
+		dataType: string
+		lineageTag: 2daac142-f95f-441e-b6be-48beb976514e
+		sourceLineageTag: 64d6782b-6b33-43c4-a600-e72957b099ee
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: parcel_pruning_m1
+
+		annotation SummarizationSetBy = User
+
+	column parcel_pruning_m2
+		dataType: string
+		lineageTag: 8d7b179c-6f49-4f48-bd36-5d4fdf95ac12
+		sourceLineageTag: 2fcc5402-d75c-497d-aada-6979754a8e7b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: parcel_pruning_m2
+
+		annotation SummarizationSetBy = User
+
+	column parcel_latitude
+		dataType: double
+		lineageTag: e957cda3-c98d-4be4-8d75-c4405ffc7698
+		sourceLineageTag: 2dadd55c-55e8-46ce-98f4-07c43edc5c56
+		dataCategory: Latitude
+		summarizeBy: average
+		sourceColumn: parcel_latitude
+
+		annotation SummarizationSetBy = User
+
+	column parcel_longitude
+		dataType: double
+		lineageTag: 739790c3-bd15-4c96-9549-05f975a00627
+		sourceLineageTag: 0ede61e9-c7ff-45f7-8fb1-3c23c049a964
+		dataCategory: Longitude
+		summarizeBy: average
+		sourceColumn: parcel_longitude
+
+		annotation SummarizationSetBy = User
+
+	column parcel_reason
+		dataType: string
+		lineageTag: fb809712-32d5-4be4-99ab-bcd92a931deb
+		sourceLineageTag: 2b5213ea-5bde-44db-a794-978963562ce2
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: parcel_reason
+
+		annotation SummarizationSetBy = User
+
+	column parcel_land_use
+		dataType: string
+		lineageTag: 5120cd5a-b935-40f6-8f82-88416fa651f2
+		sourceLineageTag: 5e1d7662-9a8a-4348-9647-93ecbcf87269
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: parcel_land_use
+
+		annotation SummarizationSetBy = User
+
+	column parcel_land_tenure
+		dataType: string
+		lineageTag: 88a8368f-6719-4c3a-bdde-1c6847cc3c8a
+		sourceLineageTag: e4e06649-bed6-4e2f-ac62-9955a889363d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: parcel_land_tenure
+
+		annotation SummarizationSetBy = User
+
+	column parcel_is_from_hd
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: c7ffbd9d-a9e2-4363-bc6e-878d541b0d69
+		sourceLineageTag: 5cd6225e-cb3c-406f-baef-eb3829099519
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: parcel_is_from_hd
+
+		annotation SummarizationSetBy = User
+
+	column actual_planting_model
+		dataType: string
+		lineageTag: 1c9fbc2b-f789-4fa7-b1d4-199575a71772
+		sourceLineageTag: 12b5f4af-45cf-46e8-808a-462a943c1d97
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: actual_planting_model
+
+		annotation SummarizationSetBy = User
+
+	column parcel_code
+		dataType: string
+		lineageTag: 887bfa40-a6dc-46ad-949d-106d7ee41277
+		sourceLineageTag: 31b3136f-0566-47c6-a6db-7260bbcc30e0
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: parcel_code
+
+		annotation SummarizationSetBy = User
+
+	column parcel_shape
+		dataType: string
+		lineageTag: ecf3e757-034b-468c-9223-8ef0f7030322
+		sourceLineageTag: d830116d-368d-40fb-be78-189d48787306
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: parcel_shape
+
+		annotation SummarizationSetBy = User
+
+	column parcel_area_ha_improved_by_estimations
+		dataType: double
+		lineageTag: 99b53095-5cb4-4a54-9317-06c49a343a94
+		sourceLineageTag: 311812aa-e386-4e36-bad0-07dff2d6c445
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: parcel_area_ha_improved_by_estimations
+
+		annotation SummarizationSetBy = User
+
+	column parcel_is_carbon_certified
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 923db958-0b91-44dc-b986-6669f13627b6
+		sourceLineageTag: 3c041c6a-2a71-4924-b1ba-4bdca9bfa3e5
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: parcel_is_carbon_certified
+
+		annotation SummarizationSetBy = User
+
+	column parcel_tree_spacing_trace
+		dataType: double
+		lineageTag: d6ab5d79-4dd7-42bc-a2dd-dba787fbee89
+		sourceLineageTag: 4c44a625-9286-49a3-9a46-13c57b656e70
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: parcel_tree_spacing_trace
+
+		annotation SummarizationSetBy = User
+
+	column parcel_nb_trees_already_on_parcel
+		dataType: double
+		lineageTag: 65f5b862-bb20-483b-ab7e-2beb8b39f860
+		sourceLineageTag: eab35970-ed16-4964-8da2-00b54d538314
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: parcel_nb_trees_already_on_parcel
+
+		annotation SummarizationSetBy = User
+
+	column 'actual_planting_model (groupes)'
+		dataType: string
+		lineageTag: c04a8c74-0a8c-499a-b69e-8d45b77b319e
+		sourceLineageTag: c6d40729-3930-426e-a0bd-dcd2b595c0a9
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: actual_planting_model (groupes)
+
+		annotation SummarizationSetBy = User
+
+	column parcel_planting_model
+		dataType: string
+		lineageTag: 85dd823e-d762-436b-91c0-d04ecfef6fe0
+		sourceLineageTag: a985a9b8-a237-4be7-8bcc-9a9950c25a7e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: parcel_planting_model
+
+		annotation SummarizationSetBy = User
+
+	column parcellanduse_other_value
+		dataType: string
+		lineageTag: c9c706aa-b94b-423b-8b30-750de55feb8a
+		sourceLineageTag: fbf42e38-e107-44f2-879c-d83ba6a4e9a0
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: parcellanduse_other_value
+
+		annotation SummarizationSetBy = User
+
+	column is_landuse_coffee
+		dataType: double
+		lineageTag: 919c5611-5c28-4a52-a0d3-476c8e467d21
+		sourceLineageTag: 40f9f23c-e168-4de9-a561-c7529aebf02b
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: is_landuse_coffee
+
+		annotation SummarizationSetBy = User
+
+	partition Dim_parcels = entity
+		mode: directQuery
+		source
+			entityName: Dim_parcels
+			expressionSource: 'DirectQuery à AS – Golden_field_dataset'
+

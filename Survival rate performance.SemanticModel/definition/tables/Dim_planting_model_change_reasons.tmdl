@@ -1,0 +1,31 @@
+table Dim_planting_model_change_reasons
+	lineageTag: a2886fe8-d675-4416-8d03-82dd79c8304c
+	sourceLineageTag: 985850da-a8d2-436d-83b2-5f08f8fca805
+
+	column reason_change_planting_model_id
+		dataType: double
+		isNullable: false
+		lineageTag: eee52196-9d84-47fe-8f1e-3c02a6e0ebdd
+		sourceLineageTag: ab312a0b-5baf-4aed-a512-2457ac8ef683
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: reason_change_planting_model_id
+
+		annotation SummarizationSetBy = User
+
+	column reason_change_planting_model
+		dataType: string
+		lineageTag: 9a12c93a-a1b4-4548-beb0-aa3b56f6a0f0
+		sourceLineageTag: 4f63d9a8-15b7-41cd-bb2e-5d43fba2c64b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: reason_change_planting_model
+
+		annotation SummarizationSetBy = User
+
+	partition Dim_planting_model_change_reasons = entity
+		mode: directQuery
+		source
+			entityName: Dim_planting_model_change_reasons
+			expressionSource: 'DirectQuery à AS – Golden_field_dataset'
+

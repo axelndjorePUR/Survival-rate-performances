@@ -1,0 +1,70 @@
+table _Dict
+	lineageTag: 8f48e320-0714-4cfb-aa2a-b1190953532c
+	sourceLineageTag: 4e83b974-828f-4a63-9953-4aa83762892c
+
+	column Category
+		dataType: string
+		lineageTag: 54cb26db-fef1-4bc7-9add-7f6d17d1d496
+		sourceLineageTag: 6b052e64-42c6-4d53-a250-9c939371ec75
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Category
+
+		annotation SummarizationSetBy = User
+
+	column Description
+		dataType: string
+		lineageTag: bf7c8665-b4e7-4588-a2ac-b0985519eeb1
+		sourceLineageTag: 44f3b4e9-ebca-40b4-9659-81e35b2faf41
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Description
+
+		annotation SummarizationSetBy = User
+
+	column Theme
+		dataType: string
+		lineageTag: 74b5121d-5d8b-4ffe-bdae-c6c871edd1be
+		sourceLineageTag: c6820fff-622b-4b1c-878a-05253871380f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Theme
+
+		annotation SummarizationSetBy = User
+
+	column Name
+		dataType: string
+		lineageTag: c3d08fee-c910-4a73-ad82-e9d632bdc2cb
+		sourceLineageTag: ae65ca83-f9aa-46c1-9315-1df5402b0bc9
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Name
+
+		annotation SummarizationSetBy = User
+
+	column Methodology
+		dataType: string
+		lineageTag: 9f6d9c9c-2e24-42f8-9596-f8c8cd4c9c83
+		sourceLineageTag: b9ca4952-e12f-4f16-8533-ee9438c94ed7
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Methodology
+
+		annotation SummarizationSetBy = User
+
+	column Calculation
+		dataType: string
+		lineageTag: 7fa6fdee-c0bf-4d3c-bc39-2ea887a445dd
+		sourceLineageTag: 3de8b3d6-91ea-444a-8be4-ba3e40c39592
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: Calculation
+
+		annotation SummarizationSetBy = User
+
+	partition _Dict = entity
+		mode: directQuery
+		source
+			entityName: _Dict
+			expressionSource: 'DirectQuery à AS – Golden_field_dataset'
+

@@ -1,0 +1,527 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.3.0/schema.json",
+  "name": "78de488558305cc00038",
+  "position": {
+    "x": 87.219152854511975,
+    "y": 109.61325966850829,
+    "z": 0,
+    "height": 565.74585635359119,
+    "width": 1116.1694290976059
+  },
+  "visual": {
+    "visualType": "WordCloud1447959067750",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Mortality"
+                    }
+                  },
+                  "Property": "Précisions sur les causes de mortalité (autre)"
+                }
+              },
+              "queryRef": "Mortality.Précisions sur les causes de mortalité (autre)",
+              "nativeQueryRef": "Premier Précisions sur les causes de mortalité (autre)"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "stopWords": [
+        {
+          "properties": {
+            "isDefaultStopWords": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "words": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Les le par arbres la de des sont du lors et pas ont est'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "performance": [
+        {
+          "properties": {
+            "preestimate": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "quality": {
+              "expr": {
+                "Literal": {
+                  "Value": "50D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "rotateText": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "dataPoint": [
+        {
+          "properties": {
+            "isShowAll": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "defaultColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 2,
+                      "Percent": 0.6
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#F90828'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Mortality"
+                          }
+                        },
+                        "Property": "Précisions sur les causes de mortalité (autre)"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'Abres coupés pendant le nettoyage.'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#F90828'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Mortality"
+                          }
+                        },
+                        "Property": "Précisions sur les causes de mortalité (autre)"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'Les arbres sont coupés lors des nettoyages par des contractuels employé par les membres de la durabilité qui ne connaissent pas les arbres'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#F90828'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Mortality"
+                          }
+                        },
+                        "Property": "Précisions sur les causes de mortalité (autre)"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'Les arbres sont coupés lors des désherbags'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#F90828'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Mortality"
+                          }
+                        },
+                        "Property": "Précisions sur les causes de mortalité (autre)"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'Desherbage'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#F90828'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Mortality"
+                          }
+                        },
+                        "Property": "Précisions sur les causes de mortalité (autre)"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'Coupe par manœuvrage'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#F90828'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Mortality"
+                          }
+                        },
+                        "Property": "Précisions sur les causes de mortalité (autre)"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "' Nettoyage'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#F90828'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Mortality"
+                          }
+                        },
+                        "Property": "Précisions sur les causes de mortalité (autre)"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'Coupé lors des désherbages'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#F90828'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Mortality"
+                          }
+                        },
+                        "Property": "Précisions sur les causes de mortalité (autre)"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'Inattention l''or du deserbage'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#F90828'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Mortality"
+                          }
+                        },
+                        "Property": "Précisions sur les causes de mortalité (autre)"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'les abousentiers coupent aussi les arbres'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#F90828'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Mortality"
+                          }
+                        },
+                        "Property": "Précisions sur les causes de mortalité (autre)"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'Absence temporaire du producteur'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

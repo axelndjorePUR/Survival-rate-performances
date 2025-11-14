@@ -1,0 +1,32 @@
+table Dim_parcel_visit_issues
+	lineageTag: 14db82da-06d6-42a3-b9dd-778299290d3a
+	sourceLineageTag: 257fc1ec-c998-4581-a4e0-3d0709122bb0
+
+	column parcel_visit_issue_id
+		dataType: double
+		isNullable: false
+		lineageTag: 10caa0ef-a929-43aa-99e0-51cf595b9e5c
+		sourceLineageTag: 11eb2b3b-c462-4543-b89c-a0754cdac5b2
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: parcel_visit_issue_id
+
+		annotation SummarizationSetBy = User
+
+	column parcel_visit_issue
+		dataType: string
+		lineageTag: 7d56e0ee-c6e8-40f9-9e39-d8a6cd8c36db
+		sourceLineageTag: e0373fa9-b93a-40d8-be21-27b6c68b400c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: parcel_visit_issue
+		sortByColumn: parcel_visit_issue_id
+
+		annotation SummarizationSetBy = User
+
+	partition Dim_parcel_visit_issues = entity
+		mode: directQuery
+		source
+			entityName: Dim_parcel_visit_issues
+			expressionSource: 'DirectQuery à AS – Golden_field_dataset'
+

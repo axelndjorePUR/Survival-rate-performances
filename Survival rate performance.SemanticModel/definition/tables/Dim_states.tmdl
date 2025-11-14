@@ -1,0 +1,43 @@
+table Dim_states
+	lineageTag: 6838a099-c91a-419a-84f0-c81dcecacf7f
+	sourceLineageTag: b6e80d82-06ff-49b5-b11e-8dfaaf01c21a
+
+	column state_id
+		dataType: int64
+		isNullable: false
+		lineageTag: 5a676346-2245-45a8-889a-7489aa2c86af
+		sourceLineageTag: e46dfaa4-feec-4325-b1f4-aa3cb6d4dda2
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: state_id
+		sortByColumn: state_order_in_pur_process
+
+		annotation SummarizationSetBy = User
+
+	column state_name
+		dataType: string
+		lineageTag: fe0ffd2a-03e6-45a9-8c65-5b8e0bf3c8ae
+		sourceLineageTag: 371bd902-5323-4cf9-af25-3ffb35bb1cef
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: state_name
+		sortByColumn: state_order_in_pur_process
+
+		annotation SummarizationSetBy = User
+
+	column state_order_in_pur_process
+		dataType: int64
+		lineageTag: 2bbe3991-e88c-43e0-8149-23ba2970d38f
+		sourceLineageTag: 4d9a43b9-5fee-4b7f-9353-9d6b7c6eab99
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: state_order_in_pur_process
+
+		annotation SummarizationSetBy = User
+
+	partition Dim_states = entity
+		mode: directQuery
+		source
+			entityName: Dim_states
+			expressionSource: 'DirectQuery à AS – Golden_field_dataset'
+

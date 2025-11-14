@@ -1,0 +1,125 @@
+cultureInfo fr-FR
+
+	linguisticMetadata =
+			{
+			  "Version": "2.0.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "table_measures_global.m1_survival_rate": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures_global",
+			          "ConceptualProperty": "m1 survival rate"
+			        }
+			      },
+			      "State": "Generated"
+			    },
+			    "table_measures_global.m1_living_trees_vs_trees_initially_distributed": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures_global",
+			          "ConceptualProperty": "m1 living trees vs trees initially distributed"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "m1 living trees": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "table_measures_global.m2_living_trees_vs_trees_initially_distributed": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures_global",
+			          "ConceptualProperty": "m2 living trees vs trees initially distributed"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "m2 living trees": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "table_measures_global.m1_inprogress_survival_rate": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures_global",
+			          "ConceptualProperty": "m1 in-progress survival rate"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Survival rate monitoring1": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "table_measures_global.m2_inprog_survival_rate": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures_global",
+			          "ConceptualProperty": "m2 in-prog survival rate"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "Survival rate monitoring2": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "dim_farmers.location_level_3": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Dim_farmers",
+			          "ConceptualProperty": "location_level_3"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "villes ou sections": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    }
+			  }
+			}
+		contentType: json
+

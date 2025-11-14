@@ -1,0 +1,31 @@
+table Dim_species_mortality_causes
+	lineageTag: a12932bf-74f4-4d75-a039-e74349a7d40f
+	sourceLineageTag: 6f9b5a6c-8c5d-44f1-aecc-b46d50678993
+
+	column species_mortalitycause_id
+		dataType: int64
+		isNullable: false
+		lineageTag: 4d4e405c-bfc8-4150-9602-74191ea5cf46
+		sourceLineageTag: a0cd8a95-b325-43cd-baa8-9b62d96d4cfa
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: species_mortalitycause_id
+
+		annotation SummarizationSetBy = User
+
+	column specie_mortalitycause
+		dataType: string
+		lineageTag: 1765f5e2-6d42-4cd7-9b4d-3870919fbd40
+		sourceLineageTag: 2da95d60-4f15-4075-82a6-bacd848fcabb
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: specie_mortalitycause
+
+		annotation SummarizationSetBy = User
+
+	partition Dim_species_mortality_causes = entity
+		mode: directQuery
+		source
+			entityName: Dim_species_mortality_causes
+			expressionSource: 'DirectQuery à AS – Golden_field_dataset'
+

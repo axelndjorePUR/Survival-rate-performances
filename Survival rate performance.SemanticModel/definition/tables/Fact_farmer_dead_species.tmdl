@@ -1,0 +1,80 @@
+table Fact_farmer_dead_species
+	lineageTag: e6705418-c4ba-44d9-a9e1-8858d541b2ae
+	sourceLineageTag: 7a392c34-e38c-4500-9f27-9653cca8b131
+
+	column subprojectwave_id
+		dataType: int64
+		lineageTag: bac98a90-7d44-4780-be15-face2715e4da
+		sourceLineageTag: 9d3ae3a1-8579-456e-9031-5426dbbbe934
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: subprojectwave_id
+
+		annotation SummarizationSetBy = User
+
+	column registry_id
+		dataType: int64
+		lineageTag: 15fc64bf-79d5-46e0-8b19-2d1b3f261568
+		sourceLineageTag: 6f4549ac-cc0b-4705-aa8f-c1b401f25c08
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: registry_id
+
+		annotation SummarizationSetBy = User
+
+	column id_farmer
+		dataType: int64
+		lineageTag: ac97eef6-8256-4c20-9aac-e6bb3a7c483a
+		sourceLineageTag: d42b30eb-3f46-4474-95c0-1db9a5bc472d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_farmer
+
+		annotation SummarizationSetBy = User
+
+	column species_id
+		dataType: int64
+		lineageTag: 99b9a964-8382-4f98-874b-1b4deed2f636
+		sourceLineageTag: 241d8aca-b867-499e-8887-e50977f4cce4
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: species_id
+
+		annotation SummarizationSetBy = User
+
+	column species_mortalitycause_id
+		dataType: int64
+		lineageTag: d2a9f125-c066-4884-b966-bc9b6a356c68
+		sourceLineageTag: 7ad16e2b-1a0b-4070-8150-704ed8d2756d
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: species_mortalitycause_id
+
+		annotation SummarizationSetBy = User
+
+	column subprojectwave_registry_id
+		dataType: string
+		lineageTag: 5c2eb059-84cd-4df4-8d9b-f4399fe1f0b9
+		sourceLineageTag: ad34be86-fec0-4cfe-adbd-9a220f95a117
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: subprojectwave_registry_id
+
+		annotation SummarizationSetBy = User
+
+	column farmerwave_id
+		dataType: double
+		lineageTag: ab825c27-2ec1-4dcd-a05c-6afe54c30ef2
+		sourceLineageTag: dae4f7f6-51f1-48f0-b6fa-668ace1c9f2b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: farmerwave_id
+
+		annotation SummarizationSetBy = User
+
+	partition Fact_farmer_dead_species = entity
+		mode: directQuery
+		source
+			entityName: Fact_farmer_dead_species
+			expressionSource: 'DirectQuery à AS – Golden_field_dataset'
+

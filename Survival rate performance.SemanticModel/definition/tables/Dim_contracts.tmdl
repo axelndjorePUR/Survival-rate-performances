@@ -1,0 +1,95 @@
+table Dim_contracts
+	lineageTag: 86aec708-40c3-481e-a2f9-8ecd50f043f3
+	sourceLineageTag: 3e7d6fc0-d1fa-4a0a-8f72-7ecfae219809
+
+	column contract_id
+		dataType: double
+		isNullable: false
+		lineageTag: 30ce2c95-3a84-49a2-adf6-01bfa29373eb
+		sourceLineageTag: a9bc1ba5-7160-4795-abff-a88909d675e0
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: contract_id
+
+		annotation SummarizationSetBy = User
+
+	column id_farmer
+		dataType: double
+		lineageTag: fc3160d1-5e59-4f69-a207-4d574926cec5
+		sourceLineageTag: d2177e29-b8fe-405d-9d27-8157a4c9f9d3
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_farmer
+
+		annotation SummarizationSetBy = User
+
+	column subprojectwave_id
+		dataType: double
+		lineageTag: b70f3659-442f-4bfa-b4c3-fb9272fe27e6
+		sourceLineageTag: 6d0eb3bf-6aee-4b14-82df-81bb2946cdc7
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: subprojectwave_id
+
+		annotation SummarizationSetBy = User
+
+	column farmer_contract_name
+		dataType: string
+		lineageTag: 89280edd-4fcc-4ceb-b36b-9ce035eb685e
+		sourceLineageTag: 8f431b05-c895-46d9-b0cc-fb45e72e2101
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: farmer_contract_name
+
+		annotation SummarizationSetBy = User
+
+	column farmer_has_signed_contract
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 0d35c1e3-a253-4a99-9e03-8d7d478156c4
+		sourceLineageTag: ebb4ce97-9d8e-4971-b859-a5806ffff56b
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: farmer_has_signed_contract
+
+		annotation SummarizationSetBy = User
+
+	column farmer_must_resign_contract
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 16921d7b-64d2-475a-a924-6b47bdb1c7c8
+		sourceLineageTag: d9e6a7b0-ad28-4517-8be3-e82120b2d3af
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: farmer_must_resign_contract
+
+		annotation SummarizationSetBy = User
+
+	column farmer_want_to_resign_contract
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 8a44ff79-b916-4641-bc76-1906f6c2e3a6
+		sourceLineageTag: 96c9afd2-0f75-4bd6-ae94-c2f230761a20
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: farmer_want_to_resign_contract
+
+		annotation SummarizationSetBy = User
+
+	column farmer_is_recognizing_contract
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 1762c60e-c237-4964-ac2d-25ca3e432045
+		sourceLineageTag: eaff0a80-f762-4ba2-956a-1afd396f2ac1
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: farmer_is_recognizing_contract
+
+		annotation SummarizationSetBy = User
+
+	partition Dim_contracts = entity
+		mode: directQuery
+		source
+			entityName: Dim_contracts
+			expressionSource: 'DirectQuery à AS – Golden_field_dataset'
+

@@ -1,0 +1,32 @@
+table Dim_farmer_satisfactions
+	lineageTag: efa1612a-3812-4d3d-91a6-3d73ebc41b18
+	sourceLineageTag: cddad119-bfda-46e2-88b5-a28a0554bf8f
+
+	column satisfaction_level_id
+		dataType: double
+		lineageTag: a510c38c-046c-409f-8517-f4337d1c4f6d
+		sourceLineageTag: 68584b93-b1b8-401f-a262-c88a85f364e5
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: satisfaction_level_id
+
+		annotation SummarizationSetBy = User
+
+	column farmer_satisfaction_level
+		dataType: string
+		isNullable: false
+		lineageTag: 1d36bef2-bc01-4be3-a178-e8b9cb381585
+		sourceLineageTag: cc706c15-cff9-4a5b-9951-3407aaf6e458
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: farmer_satisfaction_level
+		sortByColumn: satisfaction_level_id
+
+		annotation SummarizationSetBy = User
+
+	partition Dim_farmer_satisfactions = entity
+		mode: directQuery
+		source
+			entityName: Dim_farmer_satisfactions
+			expressionSource: 'DirectQuery à AS – Golden_field_dataset'
+

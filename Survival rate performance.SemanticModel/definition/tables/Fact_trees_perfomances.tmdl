@@ -1,0 +1,247 @@
+table Fact_trees_perfomances
+	lineageTag: c64d04ba-e185-46a1-a7b9-dd8170c8b613
+	sourceLineageTag: 1ac7ca0e-9369-4152-8d15-998ee12329d9
+
+	column subprojectwave_id
+		dataType: int64
+		lineageTag: 2962f116-7eaf-4315-a7ca-97d1c890e434
+		sourceLineageTag: 6b50cdb3-6ef4-4953-9955-b22f41ea766a
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: subprojectwave_id
+
+		annotation SummarizationSetBy = User
+
+	column id_farmer
+		dataType: int64
+		lineageTag: ee329a9a-1e40-47f1-8db4-1e21449351c6
+		sourceLineageTag: 45ae73fd-021c-4fa9-99dc-276f0e34c2fe
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_farmer
+
+		annotation SummarizationSetBy = User
+
+	column farmer_is_from_hd
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 5741fa95-cee7-49f4-9e98-66b9489fd52e
+		sourceLineageTag: e139a349-5dc2-4e68-b7c8-627a1de96ccf
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: farmer_is_from_hd
+
+		annotation SummarizationSetBy = User
+
+	column registry_id
+		dataType: int64
+		lineageTag: 67f3ea4c-26dd-4cf5-9e72-0ea74c661d4d
+		sourceLineageTag: b44fdb64-41d0-4b9b-b925-7aaf7d5c0827
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: registry_id
+
+		annotation SummarizationSetBy = User
+
+	column parcel_id
+		dataType: int64
+		lineageTag: 30445366-1cc2-4ca3-b442-4f06a26809a8
+		sourceLineageTag: 36466965-3db4-4c4d-ba65-dbb64d4b132e
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: parcel_id
+
+		annotation SummarizationSetBy = User
+
+	column visit_date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: c1311a66-a99b-4b94-8829-d37806f90f0f
+		sourceLineageTag: 3ad46a87-9c82-45e2-a61c-1fe7ac29e342
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: visit_date
+
+		annotation SummarizationSetBy = User
+
+	column interviewer_id
+		dataType: int64
+		lineageTag: b0b73c32-d8de-4b31-99f0-6983b602d88d
+		sourceLineageTag: 91539c5c-286d-4efb-bdd2-74961b90c8e1
+		dataCategory: Uncategorized
+		summarizeBy: distinctCount
+		sourceColumn: interviewer_id
+
+		annotation SummarizationSetBy = User
+
+	column koboformsubmission_id
+		dataType: string
+		lineageTag: 8257b93d-2be0-4b98-9a9d-247a41f8b8df
+		sourceLineageTag: 3d19f0a1-7792-4c96-921a-625deaa895ba
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: koboformsubmission_id
+
+		annotation SummarizationSetBy = User
+
+	column tree_density
+		dataType: double
+		lineageTag: 24770cca-7b13-490f-8dda-16fee8557e4d
+		sourceLineageTag: e1113442-a75c-4a7b-8aff-bd18df60474b
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: tree_density
+
+		annotation SummarizationSetBy = User
+
+	column planting_model
+		dataType: string
+		lineageTag: bd465cfa-7ccc-4dc1-b700-ef47875c886e
+		sourceLineageTag: 3a90f9b5-cbaa-4f95-a98e-c7f02a2d3a69
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: planting_model
+
+		annotation SummarizationSetBy = User
+
+	column species_id
+		dataType: int64
+		lineageTag: ca401205-1ff8-401f-9cfa-6a1117e9e533
+		sourceLineageTag: 28510433-2007-4423-a1a3-b9a7c9295fcc
+		dataCategory: Uncategorized
+		summarizeBy: distinctCount
+		sourceColumn: species_id
+
+		annotation SummarizationSetBy = User
+
+	column state_id
+		dataType: int64
+		lineageTag: 1b366f78-9bbf-4420-abe7-1c66cbaacecd
+		sourceLineageTag: 65012db0-8288-44ae-8935-3a41c48802b4
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: state_id
+
+		annotation SummarizationSetBy = User
+
+	column nb_trees
+		dataType: int64
+		formatString: #,0
+		lineageTag: d3b4e347-bc90-4e66-bbd6-e32b1e97a147
+		sourceLineageTag: 5b48a447-c08c-4799-848e-8fecad8176f0
+		dataCategory: Uncategorized
+		summarizeBy: sum
+		sourceColumn: nb_trees
+
+		annotation SummarizationSetBy = User
+
+	column farmer_visit_issue_id
+		dataType: double
+		lineageTag: 68aa823c-9f99-4fdf-b5ec-25486decbac9
+		sourceLineageTag: ac39f5d2-d019-4694-8fa6-68e2f2c33160
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: farmer_visit_issue_id
+
+		annotation SummarizationSetBy = User
+
+	column parcel_visit_issue_id
+		dataType: double
+		lineageTag: 1fdf8c48-0ec1-484f-ac2f-44b0c4ac3dd9
+		sourceLineageTag: 01ddcba3-30e6-45ef-a1d6-ca061519823f
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: parcel_visit_issue_id
+
+		annotation SummarizationSetBy = User
+
+	column parcel_has_tree_displaced_crops
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 48143d3c-00af-4cc7-ae30-e0e50cd3aaa6
+		sourceLineageTag: fff1b767-227f-4465-b9c3-ce3412ccbcc8
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: parcel_has_tree_displaced_crops
+
+		annotation SummarizationSetBy = User
+
+	column parcel_crops_displaced_land_type_id
+		dataType: double
+		lineageTag: 67884917-2f1b-418b-b4b6-bf004251463f
+		sourceLineageTag: 59d6af26-8c78-41e6-a3f3-b2e76f91c9ec
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: parcel_crops_displaced_land_type_id
+
+		annotation SummarizationSetBy = User
+
+	column reason_change_planting_model_id
+		dataType: double
+		lineageTag: cb217f4a-8ff1-478a-8e0b-226f24291fa6
+		sourceLineageTag: 7b1ef12a-f47c-49c3-bebe-68166661669a
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: reason_change_planting_model_id
+
+		annotation SummarizationSetBy = User
+
+	column subprojectwave_registry_id
+		dataType: string
+		lineageTag: b2eebeac-0fca-4b34-810d-27e4c52231d5
+		sourceLineageTag: 7ff68864-3d24-4d90-ab57-76681148f261
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: subprojectwave_registry_id
+
+		annotation SummarizationSetBy = User
+
+	/// technical field
+	column id_farmer_subprojectwave
+		dataType: string
+		isHidden
+		lineageTag: 64825146-07dd-45ee-b3a6-31fdba016ec4
+		sourceLineageTag: 272f89ca-2738-43da-9dae-cd6891a21961
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: id_farmer_subprojectwave
+
+		annotation SummarizationSetBy = User
+
+	column farmerwave_id
+		dataType: int64
+		lineageTag: c33abaf2-c9b7-456c-b340-28559e9e2071
+		sourceLineageTag: 805e8ce5-67ea-4e77-8695-25bb069f367c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: farmerwave_id
+
+		annotation SummarizationSetBy = User
+
+	column kobosubmission_sent_date
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: 58da2300-578f-40ce-9f10-1ad6f9c2ef42
+		sourceLineageTag: f2612d94-e22a-4662-89ac-5917613acea6
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: kobosubmission_sent_date
+
+		annotation SummarizationSetBy = User
+
+	column redistribution_status_id
+		dataType: int64
+		lineageTag: 78cc92d4-e87b-4358-ba9d-41b99d8aa217
+		sourceLineageTag: d09b83b2-5ada-4901-b904-823ed2b1f46c
+		dataCategory: Uncategorized
+		summarizeBy: none
+		sourceColumn: redistribution_status_id
+
+		annotation SummarizationSetBy = User
+
+	partition Fact_trees_perfomances = entity
+		mode: directQuery
+		source
+			entityName: Fact_trees_perfomances
+			expressionSource: 'DirectQuery à AS – Golden_field_dataset'
+
